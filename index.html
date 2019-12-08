@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <title>Photo Gallery</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/lightbox.min.css">
     <link rel="stylesheet" href="css/styles.css">
@@ -12,12 +11,12 @@
 <body>
 <div class="wrapper">
     <header class="header">
-        <input class="searchInput" type="search" placeholder="search(16)">
+        <input class="searchInput" type="search" placeholder="search(16)" data-toggle="hideseek" data-list="main">
     </header>
     <main class="main">
         <div class="section">
             <a href="photos/01.jpg" data-lightbox="image"
-            data-="I love hay bales. Took this snap on a drive through the countryside past some straw fields.">
+               data-title="I love hay bales. Took this snap on a drive through the countryside past some straw fields.">
                 <img src="photos/thumbnails/01.jpg" alt="Hay Bales">
             </a>
         </div>
@@ -103,14 +102,6 @@
 </div>
 <script src="js/jquery-3.4.1.min.js"></script>
 <script src="js/lightbox-plus-jquery.min.js"></script>
-<script src="HideSeek-master/jquery.hideseek.min.js"></script>
 <script src="js/main.js"></script>
-
-<script>
-    lightbox.option({
-        'alwaysShowNavOnTouchDevices': true,
-        'wrapAround': true
-    })
-</script>
 </body>
 </html>
