@@ -1,0 +1,64 @@
+
+/*===========================================
+ Base style
+ ++++++++++++++++++++++++++++++++++++++++ */
+*{
+    box-sizing: border-box;
+}
+body {
+    margin: 0;
+    padding: 0;
+}
+
+img {
+    display: flex;
+    height: 170px;
+    width: 170px;
+}
+/*===========================================
+ class selector
+ ++++++++++++++++++++++++++++++++++++++++ */
+.wrapper{
+    margin: 0 auto;
+    width: 90%;
+    height: 100%;
+
+}
+
+.searchInput{
+    width: 60%;
+    display: block;
+    max-width: 450px;
+    padding:10px ;
+    margin: 30px auto;
+    border: 1px solid lightblue;
+}
+::placeholder{
+    color: lightslategrey;
+}
+.main{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 90%;
+    margin: 30px auto;
+    max-width: 1100px;
+}
+.section{
+    width: 200px;
+    margin: 0 auto  60px;
+}
+
+/*===========================================
+ media query
+ ++++++++++++++++++++++++++++++++++++++++ */
+@media (min-width: 768px) {
+    .main{
+        flex-direction: row;
+        justify-content: center;
+    }
+    .section{
+        margin: 0 30px 30px;
+    }
+}
